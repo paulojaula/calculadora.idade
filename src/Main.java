@@ -21,7 +21,15 @@ public class Main {
 
         System.out.println("Você tem "+ Resultado + " anos" ); // Fechando o resultado do calculo
 
-        escutador.close(); // fechando a ferramenta para não sobrecarga
+        // Uma pequena brincadeira decisional após o programa entender a idade.
 
+        if (Resultado >= 18) {
+            System.out.print(" Com " + Resultado + " anos,você já é um adulto responsavel hein !");
+        }
+
+            else {
+                System.out.print(" Com " + Resultado +" anos,alguém aqui ainda esta aprendendo a andar hehehe ");
+        }
+        escutador.close(); // fechando a ferramenta para não sobrecarga
     }
 }
